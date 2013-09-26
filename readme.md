@@ -1,6 +1,6 @@
 # PI Day
 
-Every year's 14th March (3/14, in month/day notation) is a day dedicated to [Pi](http://en.wikipedia.org/wiki/Pi), the mathematical constant.
+Every year's 14th March (3/14, in month/day notation) is a day dedicated to [Pi](http://en.wikipedia.org/wiki/Pi), the **irrational number** that is the ratio of a circle's circumference to its diameter (approximately equal to **3.14159...**) and a mathematical constant.
 
 **Note:** This site is hosted by [GitHub's](http://github.com) [pages](http://pages.github.com).
 
