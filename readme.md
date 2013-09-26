@@ -2,6 +2,8 @@
 
 Every year's 14th March (3/14, in month/day notation) is a day dedicated to [Pi](http://en.wikipedia.org/wiki/Pi), the **irrational number** that is the ratio of a circle's circumference to its diameter (approximately equal to **3.14159...**) and a mathematical constant.
 
+This project was my contribution to an annual context that takes place in that day in the school where my wife teaches Math.
+
 **Note:** This site is hosted by [GitHub's](http://github.com) [pages](http://pages.github.com).
 
 ## Why
@@ -21,7 +23,7 @@ Traditionally git has been for computer programmers, but recently github added s
 a dynamic host -- so it can't do PHP/Rails/Node etc. The only ways to do dynamic content are JavaScript with an externally hosted backend (e.g. [Parse](http://parse.com/)) or set up a [jekyll blog](https://help.github.com/articles/using-jekyll-with-pages). The easiest way to do this is with [Jekyll Bootstrap](http://jekyllbootstrap.com/) - this is not really dynamic, it just generates static HTML from Markdown, but appears like a more dynamic blog.
 
 
-## How to set up a site
+## How to ...
 
 this repo is setup to only have the special **gh-pages** branch that github requires to use static file hosting. when you create and view repos on github they usually show you the default `master` branch which doesn't work with static file hosting
 
