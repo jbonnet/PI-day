@@ -1,8 +1,8 @@
 # PI Day
 
-### Use Github to host web sites without having to download an app or use the command line
+Every years 14th March (3/14, in month/day notation) is a day dedicated to [Pi](http://en.wikipedia.org/wiki/Pi), the mathematical constant.
 
-this repository is just a simple set of instructions on how to use the free github http://pages.github.com functionality to host static websites. an example of a github hosted static site is my own [personal internet web blog](http://maxogden.com) as well as [realtimecats.com](http://realtimecats.com).
+**Note:** This site is hosted by [GitHub's](http://github.com) [pages](http://pages.github.com).
 
 ## Why
 
