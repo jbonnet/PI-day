@@ -1,4 +1,4 @@
-var PiDay = {
+var PIDAY = PIDAY || {
 
 // Algorithm -- in ruby
 // PI = "314159265...
