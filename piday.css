@@ -33,6 +33,88 @@ legend {
   margin: 10px;
 }
 
+/* reset defaults */
+ body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol, li, dl, dt, dd, form, a, fieldset, input, th, td  {  
+  margin: 0; padding: 0; border: 0; outline: none;  
+}  
+body  { line-height: 1; font-size: 88%; }
+h1, h2, h3, h4, h5, h6  { font-size: 100%; padding: .6em 0; margin: 0 15px;}  
+ul, ol  {  list-style: none;}  
+img  {  border: 0;}
+
+.floatLeft  {  
+  float: left;  
+  padding: .5em .5em .5em .5em;  
+}  
+.floatRight  {  
+  float: right;  
+  padding: .5em .5em .5em .5em;  
+} 
+
+/* app related */
+
+body {
+	font-family: Verdana, "Trebuchet MS", sans-serif;
+}
+
+#heading {
+	text-align: center;
+	font-size: 300%;
+	line-height: 1;
+}
+
+#heading p {
+	font-size: 50%;
+}
+
+#content {
+	text-align: center;
+  padding:10px;
+  padding-bottom:7em;   /* Height of the footer */
+}
+#pi_digits
+{
+  font-size: 200%;
+  height:10em;
+  text-align:left;
+}
+
+#pi_value {
+  width: 90%;
+}
+
+#pi_int {
+	font-size: 28em;
+}
+
+#num_tries {
+	height: 2em;
+	font-weight: bold;
+	padding-top: 0.5em;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#logo {
+	height: 6em;
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height: 7em;   /* Height of the footer */
+   background:#ffe47c;
+}
+
+.invisible{
+	display:none;
+}
+
 /******Media Queries*******/
 
 @media all and (min-width:40em) {
