@@ -11,25 +11,25 @@
   <link rel="stylesheet" href="piday.css" type="text/css" /> 
   <script type="text/javascript">
     window.onload = function(){
-      init();
+      PIDAY.new_game('pi_digits', 'num_tries');
     }
   </script>
 
 </head>
 <body>
   <div id="heading">
-	<h1>Dia do Pi</h1>
-	<p>Escola EB 2/3 de Vila d'Este</p>
+    <h1>Dia do Pi</h1>
+    <p>Escola EB 2/3 de Vila d'Este</p>
   </div>
   <div id="content" class="centered"> 
-  <label for="pi_digits" id="pi_int">3.</label>
-  <textarea id="pi_digits" onkeydown="return onlyDigits (event)" onkeyup = "return validateDigits(event)"></textarea>
-  <div id="num_tries"></div>
-  <a href="#" onclick="init(); return false" class="invisible">Reiniciar</a>
+    <label for="pi_digits" id="pi_int">3.</label>
+    <textarea id="pi_digits" onkeydown="return PIDAY.onlyDigits(event)" onkeyup = "return PIDAY.validateDigits(event)"></textarea>
+    <div id="num_tries"></div>
+    <a id="restart" href="#" onclick="PIDAY.new_game(\'pi_digits\', \'num_tries\'); return false" class="invisible">Reiniciar</a>
   </div>
   <div id="footer">
-	<p class="floatLeft">Ano letivo 2012/13</p>
-	<img id="logo" class="floatRight" src="./img/897347.jpg" alt="Escola EB 2/3 de Vila d'Este" title="Escola EB 2/3 de Vila d'Este" />
+    <p class="floatLeft">Ano letivo 2013/14</p>
+    <img id="logo" class="floatRight" src="./img/897347.jpg" alt="Escola EB 2/3 de Vila d'Este" title="Escola EB 2/3 de Vila d'Este" />
   </div>
 </body>
 </html>
