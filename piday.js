@@ -26,7 +26,6 @@ var index = 0,
         pi_digits_field.value = right_portion;
         pi_digits_field.focus();
 
-        feedback( num_tries_field, num_tries);
     },
 
     onlyDigits = function(event){
@@ -42,28 +41,30 @@ var index = 0,
     },
    
     validateDigits = function(event) {
-        var key_code = event.keyCode;
-        if (isDigit(key_code)) {
-            digit_wanted = PI_DECIMALS.substring( index, index + 1);
-            digit_written = (pi_digits_field.value).substring( index, index + 1); 
-            if (digit_wanted == digit_written) {
-                index += 1;
-                return true;
-            } else {
-                num_tries -=1;
-                feedback( num_tries_field, num_tries);
+      var key_code = event.keyCode;
+      if (isDigit(key_code)) {
+        digit_wanted = PI_DECIMALS.substring( index, index + 1);
+        digit_written = (pi_digits_field.value).substring( index, index + 1); 
+        if (digit_wanted == digit_written) {
+          index += 1;
+          return true;
+        } else {
+          num_tries -=1;
+          feedback( num_tries_field, num_tries);
 
-                if (num_tries == 1) {
-                    alert('Tens mais uma tentativa: acertaste até ao dígito ' + index + '!');
-                    new_try();
-                } else {
-                    alert('Acabou o teu jogo, parabéns: acertaste até ao dígito ' + index + '!');
-                    new_game( 'pi_digits', 'num_tries');
-                }
-                return false;
-            }
+          if (num_tries == 1) {
+            feedback( num_tries_field, num_tries);
+            alert('Tens mais uma tentativa: acertaste até ao dígito ' + index + '!');
+            new_try();
+          } else {
+            feedback( num_tries_field, num_tries);
+            alert('Acabou o teu jogo, parabéns: acertaste até ao dígito ' + index + '!');
+            new_game( 'pi_digits', 'num_tries');
+          }
+          return false;
         }
-        return false;
+      }
+      return false;
     },
 
     feedback = function(f, tries) {
