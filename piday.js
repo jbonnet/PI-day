@@ -19,7 +19,6 @@ var index = 0,
       feedback( num_tries_field, num_tries);
       pi_digits_field.value = "";
       index = 0;
-      document.getElementById('restart').className = "invisible";
     },
 
     new_try = function(){
@@ -59,8 +58,7 @@ var index = 0,
                     new_try();
                 } else {
                     alert('Acabou o teu jogo, parabéns: acertaste até ao dígito ' + index + '!');
-                    //new_game( 'pi_digits', 'num_tries');
-                    document.getElementById('restart').className = "";
+                    new_game( 'pi_digits', 'num_tries');
                 }
                 return false;
             }
